@@ -1,15 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import { CommandIcon, HeartIcon, TriangleIcon } from "lucide-react";
+import { CommandIcon, HeartIcon,  } from "lucide-react";
 
 
 export function Footer() {
   const [likeCount, setLikeCount] = useState(0);
   const [visitorCount, setVisitorCount] = useState(0);
   const [hasLiked, setHasLiked] = useState(false);  // Track if the user has liked or not
+  const hasIncrementedVisitorCount = useRef(false);
 
   useEffect(() => {
     // Get the like status and count from localStorage
@@ -27,11 +28,14 @@ export function Footer() {
     const storedVisitors = localStorage.getItem("visitorCount");
     if (storedVisitors) {
       setVisitorCount(Number(storedVisitors));
-    } else {
-      // Increment visitor count when a new visitor comes
-      const newVisitorCount = visitorCount + 1;
+    }
+
+    // Increment visitor count when a new visitor comes
+    if (!hasIncrementedVisitorCount.current) {
+      const newVisitorCount = (storedVisitors ? Number(storedVisitors) : 0) + 1;
       localStorage.setItem("visitorCount", newVisitorCount.toString());
       setVisitorCount(newVisitorCount);
+      hasIncrementedVisitorCount.current = true;
     }
   }, []);
 
