@@ -19,10 +19,10 @@ const monoFont = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AriaDocs - Template",
-  metadataBase: new URL("https://ariadocs.vercel.app/"),
+  title: "Loadify Android Ui Loaders",
+  metadataBase: new URL("https://loadify-docs.vercel.app"),
   description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    "This open-source documentation, created for the **Loadify** library, provides detailed instructions and integration guidelines for users to implement customizable UI loaders in their Android projects.",
 };
 
 export default function RootLayout({
