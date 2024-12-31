@@ -22,7 +22,7 @@ export default function Home() {
         Follow along on GitHub{" "}
         <MoveUpRightIcon className="w-4 h-4 font-extrabold"/>
       </Link>
-      <h1 className="text-3xl font-bold mb-4 sm:text-6xl sm:leading-tight">
+      <h1 className="text-3xl font-bold mb-4 sm:text-6xl leading-normal sm:leading-tight ">
       Supercharge Your Android Apps With <span className="text-transparent hue-shift bg-gradient-to-r from-[#8b5cf6] to-[#d946ef] bg-clip-text inline-block">Loadify</span>
       </h1>
       <p className="mb-8 sm:text-lg max-w-[800px] text-muted-foreground">
@@ -32,24 +32,24 @@ export default function Home() {
       <div className="flex flex-row items-center gap-5">
         <Link
           href={`/docs${page_routes[0].href}`}
-          className={buttonVariants({ className: "px-6", size: "lg" })}
+          className={`${buttonVariants({ className: "px-6", size: "lg" })} hue-shift bg-gradient-to-r from-[#8b5cf6] to-[#d946ef]`}
         >
           Get Stared
         </Link>
         <Link
-          href="/blog"
+          href="https://github.com/Harry2876/Loadify/discussions"
           className={buttonVariants({
             variant: "secondary",
             className: "px-6",
             size: "lg",
           })}
         >
-          Read Blog
+          Community
         </Link>
       </div>
-      <span className="flex flex-row items-start sm:gap-2 gap-0.5 text-muted-foreground text-md mt-7 -mb-12 max-[800px]:mb-12 font-code sm:text-base text-sm font-medium">
+      <span className="flex flex-row items-start sm:gap-2 gap-0.5 text-muted-foreground text-md mt-7 -mb-12 max-[800px]:mb-12 font-code sm:text-base text-sm font-bold">
         <TerminalSquareIcon className="w-5 h-5 sm:mr-1 mt-0.5" />
-        {"npx create-aria-doc <project-directory>"}
+        {"`implementation(\"com.github.Harry2876:EzyLoaders:$version\")`"}
       </span>
       </div>
     </div>
