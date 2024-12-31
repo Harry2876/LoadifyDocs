@@ -1,72 +1,76 @@
 ---
 title: Installation
-description: Installation guide for our application.
+description: Installation guide for Loadify.
 ---
 
-Setting up AriaDocs is straightforward, with options to clone the repository or use the convenient `npx` command. AriaDocs requires [Node.js](https://nodejs.org/) version 18 or higher for optimal performance.
+Getting started with **Loadify** is straightforward! Follow the steps below to integrate this library into your Android project.
 
-## Clone Repository
-To get started, you can clone the AriaDocs repository directly from GitHub. 
+## Prerequisites
+
+Before adding Loadify to your project, ensure you have the following:
+
+1. **Android Studio**: Version 4.1 or higher.
+2. **Gradle**: Version 7.0 or higher for optimal compatibility.
+3. **Internet Connectivity**: To download dependencies during Gradle sync.
+4. **Kotlin**: Loadify is written in Kotlin, so enable Kotlin support in your project.
+
+If you're unsure how to set up Kotlin, follow [this guide](https://developer.android.com/kotlin).
+
+### Changelog
+#### Version 1.0.2
+- Initial release with 5 loader components.
+- Support for customizable attributes.
+- Compatible with Android API 21+.
+
+## Installation Steps
+
 <Stepper>
-  <StepperItem title="Step 1: Clone the AriaDocs Repository">
-    Begin by cloning the AriaDocs repository from GitHub:
+  <StepperItem title="Step 1: Add the JitPack Repository">
+    Add the following repository to your project-level `build.gradle` or `settings.gradle` file inside the `repositories` block:
 
-    ```plaintext
-    git clone https://github.com/nisabmohd/Aria-Docs.git
+    ```groovy
+    maven { url 'https://jitpack.io' }
+    ```
+
+    Example for `settings.gradle`:
+
+    ```groovy
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google()
+            mavenCentral()
+            maven { url 'https://jitpack.io' }
+        }
+    }
     ```
   </StepperItem>
 
-  <StepperItem title="Step 2: Access the Project Directory">
-    After cloning, navigate into the project directory to start setting up:
+  <StepperItem title="Step 2: Add the Dependency">
+    Add the following dependency to your app's `build.gradle` file inside the `dependencies` block:
 
-    ```plaintext
-    cd Aria-Docs
+    ```groovy
+    implementation("com.github.Harry2876:EzyLoaders:$version")
     ```
+
+    Replace `$version` with the latest version of the library. You can find the latest version on the [GitHub Releases Page](https://github.com/Harry2876/EzyLoaders/releases).
   </StepperItem>
 
-  <StepperItem title="Step 3: Install Required Dependencies">
-    Install all necessary project dependencies with npm:
-
-    <Note title="Remember">
-      To support React 19, package maintainers will need to test and update their packages to include React 19 as a peer dependency. This is already in progress.
-    </Note>
+  <StepperItem title="Step 3: Sync Your Gradle Project">
+    After adding the dependency and JitPack repository, sync your Gradle project to ensure that the library is added successfully. You can do this by clicking the **Sync Now** button in the notification bar or selecting:
 
     ```plaintext
-    npm install
+    File > Sync Project with Gradle Files
     ```
-  </StepperItem>
 
-  <StepperItem title="Step 4: Launch the Development Server">
-    Finally, start the development server to view the project locally:
-
-    ```plaintext
-    npm run dev
-    ```
+    Once the sync is complete, the library will be ready to use in your project.
   </StepperItem>
 </Stepper>
 
-## Quick Setup with npx
+## Next Steps
 
-For a faster setup, use the `npx` command to create a new AriaDocs project in one step:
+After successfully integrating Loadify, you can start using its customizable loaders in your app. Refer to the [Usage Guide](#) for detailed examples and customization options.
 
-```plaintext
-npx create-aria-doc <project-directory>
-```
+For any issues during installation, feel free to create an issue on our [GitHub Repository](https://github.com/Harry2876/EzyLoaders/issues).
 
-**Command Output:**
-
-```plaintext
-Creating a new AriaDocs project in /path/to/your/project from the master branch...
-Cloning Master (Full Documentation)...
-AriaDocs project successfully created in /path/to/your/project!
-
-Next steps:
-1. Navigate to your project directory:
-   cd <project-directory>
-2. Install dependencies:
-   npm install
-3. Start the development server:
-   npm run dev
-```
-
-With this setup, you’ll have a ready-to-use AriaDocs instance to start building your documentation.
+Thank you for choosing Loadify to enhance your Android application's user experience!

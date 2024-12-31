@@ -10,7 +10,7 @@ export default function Home() {
     <div className = "circle circle1 blur-2xl"></div>
     <div className="circle circle2 blur-2xl"></div>
     <div className="circle circle3 blur-2xl"></div>
-    <div className="circle circle4 blur-2xl"></div> 
+    <div className="circle circle4 blur-2xl"></div>
     <div className="flex sm:min-h-[85.5vh] min-h-[85vh]  flex-col items-center justify-center text-center px-2 sm:py-8 py-12">
     <div className="absolute inset-0  bg-white dark:bg-black bg-opacity-75 dark:bg-opacity-80 backdrop-blur-2xl z-10"></div>
       <div className="relative z-10 flex flex-col items-center">
