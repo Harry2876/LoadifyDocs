@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Loadify Android UI Loaders",
   metadataBase: new URL("https://loadify-docs.vercel.app"),
   description: "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
-  keywords: "Loadify, Android loaders, UI loaders, customizable loaders, Android UI components",
+  keywords: "Loadify, Android loaders, UI loaders, customizable loaders, Android UI components, Kotlin-based Android libraries, Jetpack Compose animations, Android development tools 2025, Best libraries for Android app performance, Free tools for UI/UX Android apps, Firebase integration with Android UI loaders, Modern UI design for mobile apps, Top Android libraries for developers,customizable loaders, Android UI components, Kotlin-based Android libraries, Jetpack Compose animations, Android development tools 2025, Best libraries for Android app performance, Free tools for UI/UX Android apps, Firebase integration with Android UI loaders, Modern UI design for mobile apps, Top Android libraries for developers, Primary Android UI loaders, Animated Android UI components, Android UI optimization, Mobile UI/UX development, Android UI libraries 2025",
   openGraph: {
     title: "Loadify Android UI Loaders",
     description: "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
