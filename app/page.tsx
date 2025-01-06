@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       <span className="flex flex-row items-start sm:gap-2 gap-0.5 text-muted-foreground text-md mt-7 -mb-12 max-[800px]:mb-12 font-code sm:text-base text-sm font-bold">
         <TerminalSquareIcon className="w-5 h-5 sm:mr-1 mt-0.5" />
-        {"`implementation(\"com.github.Harry2876:EzyLoaders:$version\")`"}
+        {"`implementation(\"com.github.Harry2876:Loadify:$version\")`"}
       </span>
       </div>
     </div>
