@@ -38,13 +38,13 @@ export function Navbar() {
             {/* <Search /> */}
             <div className="flex ml-2.5 sm:ml-0">
               <Link
-                href="https://github.com/nisabmohd/NexDocs"
+                href="https://github.com/Harry2876/Loadify"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                href="https://x.com/its_harryyyyy"
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",

@@ -19,10 +19,36 @@ const monoFont = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Loadify Android Ui Loaders",
+  title: "Loadify Android UI Loaders",
   metadataBase: new URL("https://loadify-docs.vercel.app"),
-  description:
-    "This open-source documentation, created for the **Loadify** library, provides detailed instructions and integration guidelines for users to implement customizable UI loaders in their Android projects.",
+  description: "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
+  keywords: "Loadify, Android loaders, UI loaders, customizable loaders, Android UI components",
+  openGraph: {
+    title: "Loadify Android UI Loaders",
+    description: "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
+    url: "https://loadify-docs.vercel.app",
+    siteName: "Loadify",
+    images: [
+      {
+        url: "https://github.com/user-attachments/assets/4ab92de0-7ac1-48b0-99a6-1ba0bf67eb33",
+        width: 1200,
+        height: 630,
+        alt: "Loadify Android UI Loaders",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@loadify",
+    title: "Loadify Android UI Loaders",
+    description: "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
+    images: "https://github.com/user-attachments/assets/4ab92de0-7ac1-48b0-99a6-1ba0bf67eb33",
+  },
+  alternates: {
+    canonical: "https://loadify-docs.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -32,6 +58,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+       <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Hariom Harsh" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://loadify-docs.vercel.app",
+            "name": "Loadify Android UI Loaders",
+            "author": {
+              "@type": "Person",
+              "name": "Hariom Harsh",
+            },
+            "description": "Enhance your Android apps with Loadify's customizable and visually appealing UI loaders.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Loadify",
+            },
+          })}
+        </script>
+      </head>
       <body
         className={`${sansFont.variable} ${monoFont.variable} font-regular antialiased tracking-wide`}
         suppressHydrationWarning
